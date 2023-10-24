@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<title>Product catalogue</title>
+	<link rel="stylesheet" type=text/css href=".css">
+	<style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+		table, th, td {
+			border: 3px solid darkblue;
+			border-collapse: "" ;
+		}
+		.darkbutton {
+			float: right;
+		}
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>  
+	    <select id="catalogue">
+			<option value="main.html">Home Page</option>
+			<option value="Processor.html">Processor</option>
+			<option value="Motherboard.html">Motherboard</option>
+			<option value="RAM.html">RAM</option>
+			<option value="Storage_Devices.html">Storage Devices</option>
+			<option value="Graphics_Card.html">Graphics cards</option>
+			<option value="PSU.html">Power Supply Units</option>
+			<option value="Liquid_Coolers.html">Liquid Coolers</option>
+			<option value="Cabinets_and_other_Accessories.html">Cabinets and other Accessories</option>
+		</select>
+	<button onclick="siteRedirect()">GO</button>
+	<button class="darkbutton" onclick="darkMode()" >Darkmode</button>
+	</div>
+<script>
+	function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+	function siteRedirect() {
+		var selectbox = document.getElementById("catalogue");
+		var selectedValue = selectbox.options[selectbox.selectedIndex].value;
+		window.location.href = selectedValue;
+        }
+</script>
+
+
+
+
+<p style="text-align:center; font-size:100px;">THIS WEBSITE IS UNDER CONSTRUCTION</p>

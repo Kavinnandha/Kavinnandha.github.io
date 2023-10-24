@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+	<title>Product catalogue</title>
+	<link rel="stylesheet" type=text/css href=".css">
+	<style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+		table, th, td {
+			border: 3px solid darkblue;
+			border-collapse: "" ;
+		}
+		.darkbutton {
+			float: right;
+		}
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>  
+	    <select id="catalogue">
+			<option value="main.html">Home Page</option>
+			<option value="Processor.html">Processor</option>
+			<option value="Motherboard.html">Motherboard</option>
+			<option value="Ram.html">RAM</option>
+			<option value="Storage_Devices.html">Storage Devices</option>
+			<option value="Graphics_Card.html">Graphics cards</option>
+			<option value="PSU.html">Power Supply Units</option>
+			<option value="Liquid_Coolers.html">Liquid Coolers</option>
+			<option value="Cabinets_and_other_Accessories.html">Cabinets and other Accessories</option>
+		</select>
+	<button onclick="siteRedirect()">GO</button>
+	<button class="darkbutton" onclick="darkMode()" >Darkmode</button>
+	</div>
+<script>
+	function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+	function siteRedirect() {
+		var selectbox = document.getElementById("catalogue");
+		var selectedValue = selectbox.options[selectbox.selectedIndex].value;
+		window.location.href = selectedValue;
+        }
+</script>
+<div>
+	<center><img src="Intel.png"></center>
+	<p><center><h1 style="color:skyblue">Intel® Core™ 14th Gen Desktop Processors - METEOR LAKE</h1></center></p>
+</div>
+<div>
+<table cellspacing="10" cellpadding="10" >
+<thead>
+<tr><th></th><th>Intel® Core™ i9K and i9KF</th><th>Intel® Core™ i7K and i7KF</th><th>Intel® Core™ i5K and i5K</tr>   
+</thead>
+<tbody>
+<tr><td>Pricing (in Rupees)</td><td>51,999</td><td>34,799</td><td>26,499</td></tr>
+<tr><td>Max Turbo Frequency [GHz]</td><td>Up to 6.0</td><td>Up to 5.6</td><td>Up to 5.3</td></tr>
+<tr><td>Intel® Turbo Boost Max Technology 3.0 Frequency [GHz]</td><td>Up to 5.8</td><td>Up to 5.6</td><td>N/A</td></tr>
+<tr><td>Performance-core Max Turbo Frequency [GHz]</td><td>Up to 5.6</td><td>Up to 5.5</td><td>Up to 5.3</td></tr>
+<tr><td>Efficient-core Max Turbo Frequency [GHz]</td><td>Up to 4.4</td><td>Up to 4.3</td><td>Up to 4.0</td></tr>
+<tr><td>Processor Cores (P-cores + E-cores)</td><td>24 (8P + 16E)</td><td>20 (8P + 12E)</td><td>14 (6P + 8E)</td></tr>
+<tr><td>Intel® Hyper-Threading Technology</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Total Processor Threads</td><td>32</td><td>28</td><td>20</td></tr>
+<tr><td>Intel® Thread Director</td><td colspan="3" style="text-align: center;">Yes</td></tr>
+<tr><td>Intel® Smart Cache (L3) Size [MB]</td><td>36 MB</td><td>33 MB</td><td>24 MB</td></tr>
+<tr><td>Total L2 Cache Size [MB]</td><td>32 MB</td><td>28 MB</td><td>20 MB</td></tr>
+<tr><td>Max Memory Speed [MT/s]</td><td colspan="3" style="text-align: center;"><p>DDR5-5600<br>DDR4-3200</p></td></tr>
+<tr><td>Number of Memory Channels</td><td colspan="3" style="text-align: center;">2</td></tr>
+<tr><td>CPU PCIe 5.0 Lanes</td><td colspan="3" style="text-align: center;">Up to 16</td></tr>
+<tr><td>CPU PCIe 4.0 Lanes</td><td colspan="3" style="text-align: center;">4</td></tr>
+<tr><td>Graphics Dynamic Frequency [MHz]</td><td>1650</td><td>1600</td><td>1550</td></tr>
+<tr><td>Processor P-core / E-core / Graphics / Memory Overclocking</td><td colspan="3" style="text-align: center;">Yes</td></tr>
+<tr><td>Intel® Deep Learning Boost (Intel® DL Boost)</td><td colspan="3" style="text-align: center;">Yes</td></tr>
+<tr><td>Intel® Gaussian and Neural Accelerator (GNA)</td><td colspan="3" style="text-align: center;">Yes</td></tr>
+</tbody>
+</table>
+<p style="font-size:100px"> </P>
+<p style="text-align:center; font-size:50px"><strong>Intel® Core Desktop Processors: Features at a Glance</strong></p>
+<table cellspacing="15" cellpadding="15">
+<thead>
+	<tr><th>Feature</th><th>Benefit</th></tr>   
+</thead>
+<tbody>
+<tr><td>Performance-core (P-core)</td><td>The highest-performing CPU core ever built by Intel, designed to handle single-threaded, lightly threaded, or burst workloads like 4K gaming and 3D design.</td></tr>
+<tr><td>Efficient-core (E-core)</td><td>Designed to handle multi-threaded and background tasks such as minimized browser tabs, IT services, and cloud syncing, leaving P-cores free to deliver incredible performance without interruption.</td></tr>
+<tr><td>Performance Hybrid Architecture</td><td>Integrates two core microarchitectures into a single die, prioritizing and distributing workloads to optimize performance.</td></tr>
+<tr><td>PCIe 5.0 up to 16 Lanes</td><td>Offers readiness for up to 32 GT/s for fast access to discrete graphics, storage, and peripheral devices with up to 16 PCI Express 5.0 lanes.</td></tr>
+<tr><td>PCIe 4.0 up to 4 Lanes</td><td>Offers up to 16 GT/s for fast access to storage and peripheral devices with up to 4 PCI Express 4.0 lanes.</td></tr>
+<tr><td>Up to DDR5 5600 MT/s<sup>10</sup></td><td>Delivers the latest, industry-leading innovation in memory capabilities for fast speeds, high bandwidth, and enhanced workflow productivity.</td></tr></tr>
+<tr><td>L3 and L2 Cache</td><td>Increased shared Intel® Smart Cache (L3) and L2 cache sizes allow users to work faster, with larger datasets.</td></tr>
+<tr><td>Intel® Deep Learning Boost</td><td>Accelerates AI inference to improve performance for deep learning workloads.</td></tr>
+<tr><td>Gaussian &amp; Neural Accelerator 3.0 (GNA 3.0)</td><td>Processes AI speech and audio applications such as neural noise cancellation while simultaneously freeing up CPU resources for overall system performance and responsiveness.</td></tr>
+<tr><td>Overclocking Features and Capabilities</td><td>When paired with the Intel® Z790 or Z690 chipset, processor P-cores, E-cores, graphics, and memory can be set to run at frequencies above the processor specification resulting in higher performance.</td></tr>
+</tbody>
+</table>
+</body>
+</html>

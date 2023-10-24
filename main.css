@@ -1,0 +1,42 @@
+body, html 
+{
+	height: 100%;
+	overflow: hidden;
+	margin: 0%; 
+	
+}	
+
+.container
+{
+	position: relative;
+	text-align: ceter;
+	color: white;
+	font-size: 30px;
+}
+.top-center
+{
+	position: absolute;
+	top: 5%;
+	left: 13%;
+	font-size: 40px;
+   /* background: -webkit-linear-gradient(#07fa02, #fa1302);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	*/
+}
+
+.hlinks
+{
+
+	position: absolute;
+	top: 17%;
+	left: 5%;
+	font-size: 40px;
+	font-family: "Arial black", sans-serif;
+}	
+
+a:link { color: orange; text-decoration: none;}
+a:visited { color: darkviolet; text-decoration: none; }
+a:hover { color: blue; text-decoration: none;}
+a:active { color: green; text-decoration: none;}
+
+  
