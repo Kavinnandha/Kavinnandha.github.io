@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: red;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+	text-shadow: 2px 2px 5px red;
+}
+
+p {
+    color: red;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid red;
+  
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+	display:grid;
+	place-items:center;
+    height:100hv;
+}
+
+video {
+  height:540px;
+  width:750px;
+
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+	<title>Product catalogue</title>
+	<link rel="stylesheet" type=text/css href=".css">
+	<style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+		table, th, td {
+			border: 3px  solid green;
+			border-collapse: collapse;
+		}
+		.darkbutton {
+			float: right;
+		}
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>  
+	    <select id="catalogue">
+			
+			<option value="main.html">Home Page</option>
+			<option value="Processor.html">Processor</option>
+			<option value="Motherboard.html">Motherboard</option>
+			<option value="RAM.html">RAM</option>
+			<option value="Storage_Devices.html">Storage Devices</option>
+			<option value="Graphics_Card.html">Graphics cards</option>
+			<option value="PSU.html">Power Supply Units</option>
+			<option value="Liquid_Coolers.html">Liquid Coolers</option>
+			<option value="Cabinets_and_other_Accessories.html">Cabinets and other Accessories</option>
+		</select>
+	<button onclick="siteRedirect()">GO</button>
+	<button class="darkbutton" onclick="darkMode()" >Darkmode</button>
+	</div>
+	<script>
+		function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+		function siteRedirect() 
+		{
+			var selectbox = document.getElementById("catalogue");
+			var selectedValue = selectbox.options[selectbox.selectedIndex].value;
+			window.location.href = selectedValue;
+        }
+    </script>
+	<!--<table color="white" border="2" cellspacing="5" cellpadding="5">
+		<tr><td>Product name</td></tr>
+	</table> -->
+	
+<p><center><h1 style="color:green">Nvidia Geforce RTX 40 Series Graphics Cards</h1></center></p>
+<table cellspacing="10" cellpadding="10">
+	<thead> 
+	
+		<tr> 
+			<th><img src="nvidia.png"    height="100px" width="100px"></th>
+			<th><img src="rtx4090.png"   height="200px" width="180px"><br><a href="https://www.nvidia.com/en-in/geforce/graphics-cards/40-series/rtx-4090/"       >GeForce <br>RTX 4090   </a></th> 
+			<th><img src="rtx4080.png"   height="200px" width="180px"><br><a href="https://www.nvidia.com/en-in/geforce/graphics-cards/40-series/rtx-4080/"       >GeForce <br>RTX 4080   </a></th> 
+			<th><img src="rtx4070ti.png" height="200px" width="180px"><br><a href="https://www.nvidia.com/en-in/geforce/graphics-cards/40-series/rtx-4070-4070ti/">GeForce <br>RTX 4070 Ti</a></th> 
+			<th><img src="rtx4070.png"   height="200px" width="180px"><br><a href="https://www.nvidia.com/en-in/geforce/graphics-cards/40-series/rtx-4070-4070ti/">GeForce <br>RTX 4070   </a></th> 
+			<th><img src="rtx4060ti.png" height="200px" width="180px"><br><a href="https://www.nvidia.com/en-in/geforce/graphics-cards/40-series/rtx-4060-4060ti/">GeForce <br>RTX 4060 Ti</a></th> 
+			<th><img src="rtx4060.png"   height="200px" width="180px"><br><a href="https://www.nvidia.com/en-in/geforce/graphics-cards/40-series/rtx-4060-4060ti/">GeForce <br>RTX 4060   </a></th> 
+		</tr> 
+   </thead> 
+   <tbody> 
+		<tr>
+			<td>Price (in Rupees)</td>
+			<td>1,58,000</td>
+			<td>1,19,000</td>
+			<td>62,000</td>
+			<td>55,000</td>
+			<td>33,000</td>
+			<td>28,000</td>
+		</tr>
+        <tr> 
+		   <td colspan="0"><strong>GPU Engine Specs:</strong></td> 
+        </tr> 
+        <tr> 
+		   <td>NVIDIA CUDA<sup>®</sup> Cores</td> 
+           <td>16384</td> 
+           <td>9728</td> 
+           <td>7680</td> 
+           <td>5888</td> 
+           <td>4352</td> 
+           <td>3072</td> 
+        </tr> 
+        <tr> 
+           <td>Boost Clock (GHz)</td> 
+           <td>2.52</td> 
+           <td>2.51</td> 
+           <td>2.61</td> 
+		   <td>2.48</td> 
+           <td>2.54</td> 
+           <td>2.46</td> 
+        </tr> 
+	    <tr>
+           <td>Base Clock (GHz)</td> 
+           <td>2.23</td> 
+           <td>2.21</td> 
+           <td>2.31</td> 
+           <td>1.92</td> 
+           <td>2.31</td> 
+           <td>1.83</td> 
+        </tr> 
+		<tr class="tr_blank"> 
+     
+        </tr> 
+        <tr> 
+    <td><strong>Memory Specs:</strong></td>  
+    </tr> 
+    <tr> 
+     <td>Standard Memory Config</td> 
+     <td>24 GB GDDR6X</td> 
+     <td>16 GB GDDR6X</td> 
+     <td>12 GB GDDR6X</td> 
+     <td>12 GB GDDR6X</td> 
+     <td>8 GB GDDR6 </td> 
+     <td>8 GB GDDR6 </td> 
+    </tr> 
+    <tr class="no-border"> 
+     <td>Memory Interface Width</td> 
+     <td>384-bit</td> 
+     <td>256-bit</td> 
+     <td>192-bit</td> 
+     <td>192-bit</td> 
+     <td>128-bit</td> 
+     <td>128-bit</td> 
+    </tr> 
+    <tr class="tr_blank"> 
+    </tr> 
+    <tr>
+        <td><strong>Technology Support:</strong></td> 
+    </tr>
+    <tr> 
+     <td>NVIDIA Architecture</td> 
+     <td>Ada Lovelace</td> 
+     <td>Ada Lovelace</td> 
+     <td>Ada Lovelace</td> 
+     <td>Ada Lovelace</td> 
+     <td>Ada Lovelace</td> 
+     <td>Ada Lovelace</td> 
+    </tr> 
+    <tr>
+     <td><strong>Thermal and Power Specs:</strong></td> 
+    
+    </tr> 
+    <tr> 
+     <td>Maximum GPU Temperature (in C)</td> 
+     <td>90</td> 
+     <td>90</td> 
+     <td>90</td> 
+     <td>90</td> 
+     <td>90</td> 
+     <td>90</td> 
+    </tr> 
+    <tr> 
+     <td>Idle Power (W)</td> 
+     <td>19</td> 
+     <td>13</td> 
+     <td>12</td> 
+     <td>10</td> 
+     <td>7</td> 
+     <td>7</td> 
+    </tr> 
+    <tr> 
+     <td>Video Playback Power (W)</td> 
+     <td>25</td> 
+     <td>21</td> 
+     <td>20</td> 
+     <td>16</td> 
+     <td>13</td> 
+     <td>11</td> 
+    </tr> 
+    <tr> 
+     <td>Average Gaming Power (W)</td> 
+     <td>315</td> 
+     <td>251</td> 
+     <td>226</td> 
+     <td>186</td> 
+     <td>140</td> 
+     <td>110</td> 
+    </tr> 
+    <tr> 
+     <td>Total Graphics Power (W)</td> 
+     <td>450</td> 
+     <td>320</td> 
+     <td>285</td> 
+     <td>200</td> 
+     <td>165 or 160</td> 
+     <td>115</td> 
+    </tr> 
+    <tr> 
+     <td>Required System</td> 
+     <td>850</td> 
+     <td>750</td> 
+     <td>700</td> 
+     <td>650</td> 
+     <td>550</td> 
+     <td>550</td> 
+    </tr> 
+    <tr> 
+     <td>Required Power Connectors</td> 
+     <td>450 W </td> 
+     <td>450 W </td> 
+     <td>300 W </td> 
+     <td>300 W </td> 
+     <td>300 W </td> 
+     <td>300 W </td> 
+    </tr> 
+  
+  </table> 
+</body>
+</html>

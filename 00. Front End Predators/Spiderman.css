@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: #fc0303;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+p {
+    color: 5e03fc;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #fc0303;
+  
+}
+
+a {
+    color: #fc0303;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+
+}
+
+video {
+  height:540px;
+  width:750px;
+
+}

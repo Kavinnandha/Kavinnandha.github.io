@@ -1,0 +1,43 @@
+body{
+    background-color: #ffffff;
+}
+.img{
+    margin:auto;
+    padding: auto;
+    margin-top: 4%;
+    width: 45%;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+.content{
+    margin:auto;
+    padding:30px;  
+    width:41.3%;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+}
+.txtbox{
+    padding: 8px;
+    padding-right: 45px;
+}
+.tab {    
+    margin-left: 30px ;
+}
+.button{
+    background: green;
+}
+.button:hover{
+    background-color: #285229;
+}
+a{
+    color:green
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}

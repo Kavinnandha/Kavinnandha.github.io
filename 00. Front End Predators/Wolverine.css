@@ -1,0 +1,43 @@
+body {
+    background-color: purple;
+    color: yellow;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+p {
+    color: yellow;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid yellow;
+  
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+	display:grid;
+	place-items:center;
+    height:100hv;
+}
+
+video {
+  height:540px;
+  width:750px;
+
+}
